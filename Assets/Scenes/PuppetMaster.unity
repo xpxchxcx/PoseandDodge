@@ -239,7 +239,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e9568796321ba2149a350f68a0adf429,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: -0.647
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e9568796321ba2149a350f68a0adf429,
         type: 3}
@@ -2061,7 +2061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 325103644, guid: 019b917704c3c29478d778e143d411d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.287
+      value: 12.74
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 019b917704c3c29478d778e143d411d2, type: 3}
@@ -2173,13 +2173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obstacles:
-  - {fileID: 2887391231346018044, guid: 553cee6de8a7cda4d9ba23be1c588b40, type: 3}
   - {fileID: 2890115433803205195, guid: aec5fea2c5862f046b9dfc2b380d5397, type: 3}
   - {fileID: 2518141158921177255, guid: 385c631a8a753ae45865a9cae5e7d680, type: 3}
-  - {fileID: 8228407333792829736, guid: dbe4a42b829c3ea44be0058f2caecbbd, type: 3}
+  - {fileID: 2179204548120804059, guid: 84dd4eaab7cec694a861134757f896f9, type: 3}
+  - {fileID: 2219470168889289911, guid: edf3adac5f5029f4eab275805af42058, type: 3}
   speed: 5
-  obstaclePrefab: {fileID: 2887391231346018044, guid: 553cee6de8a7cda4d9ba23be1c588b40,
-    type: 3}
   respawnTime: 2
 --- !u!4 &1811518179
 Transform:
@@ -2523,7 +2521,7 @@ Transform:
   m_GameObject: {fileID: 2094886184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 5.88}
-  m_LocalScale: {x: 10, y: 3.55, z: 1.04}
+  m_LocalScale: {x: 10, y: 7.621495, z: 1.04}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5

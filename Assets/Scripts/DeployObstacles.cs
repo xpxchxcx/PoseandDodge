@@ -11,7 +11,7 @@ public class DeployObstacles : MonoBehaviour
 
     public List<GameObject> Obstacles = new List<GameObject>();
     public float speed = 10.0f;
-    public GameObject obstaclePrefab;
+    private GameObject obstaclePrefab;
     public float respawnTime = 2.0f;
     private void spawnObstacle()
     {
