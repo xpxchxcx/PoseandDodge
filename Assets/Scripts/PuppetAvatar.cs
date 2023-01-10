@@ -42,8 +42,36 @@ public class PuppetAvatar : MonoBehaviour
             default: return HumanBodyBones.LastBone;
         }
     }
+    private void Awake()
+    {
+        RootPosition = GameObject.Find("pelvis");
+        GameObject trackerHandler = GameObject.FindGameObjectWithTag("tracker");
+        TrackerHandler targetScript = trackerHandler.GetComponent<TrackerHandler>();
+        KinectDevice = targetScript;
+        PuppetAnimator = GetComponent<Animator>();
+        Transform _rootJointTransform = CharacterRootTransform;
+
+        absoluteOffsetMap = new Dictionary<JointId, Quaternion>();
+        for (int i = 0; i < (int)JointId.Count; i++)
+        {
+            HumanBodyBones hbb = MapKinectJoint((JointId)i);
+            if (hbb != HumanBodyBones.LastBone)
+            {
+                Transform transform = PuppetAnimator.GetBoneTransform(hbb);
+                Quaternion absOffset = GetSkeletonBone(PuppetAnimator, transform.name).rotation;
+                // find the absolute offset for the tpose
+                while (!ReferenceEquals(transform, _rootJointTransform))
+                {
+                    transform = transform.parent;
+                    absOffset = GetSkeletonBone(PuppetAnimator, transform.name).rotation * absOffset;
+                }
+                absoluteOffsetMap[(JointId)i] = absOffset;
+            }
+        }
+    }
     private void Start()
     {
+        RootPosition = GameObject.Find("pelvis");
         PuppetAnimator = GetComponent<Animator>();
         Transform _rootJointTransform = CharacterRootTransform;
 

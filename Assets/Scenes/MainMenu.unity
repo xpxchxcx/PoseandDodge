@@ -558,21 +558,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 528983835501186937, guid: 97a719e65d961924c9695c870d4347d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 528983835768678153, guid: 97a719e65d961924c9695c870d4347d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Pose
-      objectReference: {fileID: 0}
-    - target: {fileID: 528983834753156492, guid: 97a719e65d961924c9695c870d4347d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Dodge
-      objectReference: {fileID: 0}
     - target: {fileID: 528983834635692506, guid: 97a719e65d961924c9695c870d4347d0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -591,7 +576,7 @@ PrefabInstance:
     - target: {fileID: 528983834635692506, guid: 97a719e65d961924c9695c870d4347d0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: PuppetMaster
+      value: CharacterSelection
       objectReference: {fileID: 0}
     - target: {fileID: 528983835168411769, guid: 97a719e65d961924c9695c870d4347d0,
         type: 3}
@@ -612,6 +597,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 528983834753156492, guid: 97a719e65d961924c9695c870d4347d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Dodge
+      objectReference: {fileID: 0}
+    - target: {fileID: 528983835501186937, guid: 97a719e65d961924c9695c870d4347d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 528983835768678153, guid: 97a719e65d961924c9695c870d4347d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pose
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 528983834500532773, guid: 97a719e65d961924c9695c870d4347d0, type: 3}

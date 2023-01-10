@@ -313,11 +313,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paladin WProp J Nordstrom
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 843ff51429e03ec448846769c959f22a,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 843ff51429e03ec448846769c959f22a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -372,6 +367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 843ff51429e03ec448846769c959f22a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 843ff51429e03ec448846769c959f22a, type: 3}

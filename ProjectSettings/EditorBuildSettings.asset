@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 90fd975f07a9b7345b5562c04203a764
   - enabled: 1
+    path: Assets/Scenes/CharacterSelection.unity
+    guid: 9dfccb5de04d49d418646916e1ce1765
+  - enabled: 1
     path: Assets/Scenes/PuppetMaster.unity
     guid: 8215b2909d961934f99b0dfb44f57878
   - enabled: 0

@@ -1027,7 +1027,7 @@ Animator:
   m_GameObject: {fileID: 2827812544184077032}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f6b8fa80d05526541a003bac8dee9848, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f4137d170357c24092ba231cb7a3c40, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1111,6 +1111,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
