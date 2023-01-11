@@ -10,13 +10,14 @@ public class DetectObstacle : MonoBehaviour
     public float outBoundsOne = -1.5f;
     public float outBoundsTwo = 3.6f;
     private GameObject target;
+    public bool canTakeDamage;
     // Start is called before the first frame update
     void Start()
     {
+        canTakeDamage = true;
         target = GameObject.FindWithTag("Player");
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        
     }
 
     // Update is called once per frame
@@ -30,7 +31,7 @@ public class DetectObstacle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "obstacle")
+        if(other.gameObject.tag == "obstacle" && canTakeDamage)
         {
             Debug.Log("You took damage");
             currentHealth--;
@@ -39,7 +40,14 @@ public class DetectObstacle : MonoBehaviour
             {
                 FindObjectOfType<GameManager>().EndGame();
             }
+            canTakeDamage = false;
+            StartCoroutine(Cooldown());
 
         }
+    }
+    public IEnumerator Cooldown()
+    {
+        yield return new WaitForSeconds(1f);
+        canTakeDamage = true;
     }
 }
