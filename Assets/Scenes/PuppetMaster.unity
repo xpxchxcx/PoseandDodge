@@ -1092,6 +1092,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5138862340821720762, guid: 61d142d41f3b24c4f8a5e24ffcd8f780,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 608374634}
+    - target: {fileID: 6997809544963488173, guid: 61d142d41f3b24c4f8a5e24ffcd8f780,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61d142d41f3b24c4f8a5e24ffcd8f780, type: 3}
 --- !u!114 &997232482 stripped
@@ -1948,6 +1958,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2373301873300506749, guid: e24ddb1fe09aac8418bb77353602285f,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 608374634}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e24ddb1fe09aac8418bb77353602285f, type: 3}
 --- !u!4 &1148989907 stripped
@@ -1976,7 +1991,7 @@ PrefabInstance:
     - target: {fileID: 5628163287635637129, guid: c5bd64de9cfeb4c4d9ecbba98101bdfa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.325
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 5628163287635637129, guid: c5bd64de9cfeb4c4d9ecbba98101bdfa,
         type: 3}
@@ -2028,6 +2043,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3f4137d170357c24092ba231cb7a3c40, type: 2}
+    - target: {fileID: 6007149598702861836, guid: c5bd64de9cfeb4c4d9ecbba98101bdfa,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 608374634}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5bd64de9cfeb4c4d9ecbba98101bdfa, type: 3}
 --- !u!4 &1151025602 stripped
@@ -2823,12 +2843,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1712904299064518510, guid: 76503c46305991a49b70cb0a8076d2d2,
+    - target: {fileID: 4613895837306051154, guid: 76503c46305991a49b70cb0a8076d2d2,
         type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 608374634}
-    - target: {fileID: 4613895837306051154, guid: 76503c46305991a49b70cb0a8076d2d2,
+    - target: {fileID: 1712904299064518510, guid: 76503c46305991a49b70cb0a8076d2d2,
         type: 3}
       propertyPath: healthBar
       value: 
