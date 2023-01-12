@@ -21,5 +21,9 @@ public class ChildCollider : MonoBehaviour
             detectObstacle.StartCoroutine(detectObstacle.Cooldown());
 
         }
+        else
+        {
+            Debug.Log("Child Collider: Currently on cool down, no damage recorded");
+        }
     }
 }

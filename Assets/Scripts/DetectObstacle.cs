@@ -44,10 +44,14 @@ public class DetectObstacle : MonoBehaviour
             StartCoroutine(Cooldown());
 
         }
+        else
+        {
+            Debug.Log("Currently on cooldown, damage will not be registered!");
+        }
     }
     public IEnumerator Cooldown()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         canTakeDamage = true;
     }
 }
