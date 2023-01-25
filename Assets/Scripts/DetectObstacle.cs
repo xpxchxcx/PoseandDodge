@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DetectObstacle : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class DetectObstacle : MonoBehaviour
     public float outBoundsOne = -1.5f;
     public float outBoundsTwo = 3.6f;
     private GameObject target;
+    public GameObject getHitScreen;
     public bool canTakeDamage;
     // Start is called before the first frame update
     void Start()
@@ -27,13 +29,22 @@ public class DetectObstacle : MonoBehaviour
         {
             FindObjectOfType<GameManager>().EndGame();
         }
+
+        if (Input.GetKeyDown("space"))
+        {
+            damageScreen();
+        }
+
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "obstacle" && canTakeDamage)
         {
+
             Debug.Log("You took damage");
+            damageScreen();
             currentHealth--;
             healthBar.SetHealth(currentHealth);
             if (currentHealth == 0)
@@ -53,5 +64,23 @@ public class DetectObstacle : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         canTakeDamage = true;
+    }
+
+    public void damageScreen()
+    {
+        var color = getHitScreen.GetComponent<Image>().color;
+        color.a = 0.8f;
+        getHitScreen.GetComponent<Image>().color = color;
+        getHitScreen.SetActive(true);
+        Invoke("resetScreen", 0.5f);
+
+    }
+
+    void resetScreen()
+    {
+        var color = getHitScreen.GetComponent<Image>().color;
+        color.a = 0f;
+        getHitScreen.GetComponent<Image>().color = color;
+        getHitScreen.SetActive(false);
     }
 }
