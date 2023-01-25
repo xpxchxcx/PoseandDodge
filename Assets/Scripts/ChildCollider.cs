@@ -11,6 +11,7 @@ public class ChildCollider : MonoBehaviour
         if (other.gameObject.tag == "obstacle" && detectObstacle.canTakeDamage)
         {
             detectObstacle.damageScreen();
+            detectObstacle.hurtAudio.Play();
             Debug.Log("You took damage");
             detectObstacle.currentHealth--;
             detectObstacle.healthBar.SetHealth(detectObstacle.currentHealth);

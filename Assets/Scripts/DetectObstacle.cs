@@ -12,10 +12,13 @@ public class DetectObstacle : MonoBehaviour
     public float outBoundsTwo = 3.6f;
     private GameObject target;
     public GameObject getHitScreen;
+    public AudioSource hurtAudio;
+    public AudioSource backgroundAudio;
     public bool canTakeDamage;
     // Start is called before the first frame update
     void Start()
     {
+        backgroundAudio.playOnAwake = true;
         canTakeDamage = true;
         target = GameObject.FindWithTag("Player");
         currentHealth = maxHealth;
@@ -42,7 +45,7 @@ public class DetectObstacle : MonoBehaviour
     {
         if(other.gameObject.tag == "obstacle" && canTakeDamage)
         {
-
+            hurtAudio.Play();
             Debug.Log("You took damage");
             damageScreen();
             currentHealth--;
@@ -83,4 +86,5 @@ public class DetectObstacle : MonoBehaviour
         getHitScreen.GetComponent<Image>().color = color;
         getHitScreen.SetActive(false);
     }
+
 }
