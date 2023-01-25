@@ -1,4 +1,4 @@
-### Game Scripts
+# Game Scripts
 
 ## TrackerHandler.cs
 - This script is responsible for handling the Azure Kinect body tracking data and mapping the joints to the corresponding bones in the character model.
