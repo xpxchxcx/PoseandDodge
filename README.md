@@ -15,7 +15,7 @@
 ---
 ## Code Documentation
 
-Documentation of our code can be found in the [docs.md](https://github.com/xpxchxcx/RGBD2Avatar/blob/main/docs.md).
+Documentation of our code can be found in the [docs](https://github.com/xpxchxcx/RGBD2Avatar/blob/main/docs.md).
 
 
 
