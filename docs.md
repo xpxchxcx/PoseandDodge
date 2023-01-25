@@ -83,7 +83,7 @@
 
 ---
 
-## Child Collider.cs
+## ChildCollider.cs
 
 - Detects collisions between the child object of a parent object and an obstacle
 - When a collision is detected, the script checks if the detectObstacle object can currently take damage
