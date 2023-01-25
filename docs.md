@@ -38,6 +38,24 @@
 
 ---
 
+## DetectObstacle.cs
+
+- Keeps track of the player's health and updates the health bar accordingly
+- Detects when the player collides with an obstacle and subtracts health
+- Ends the game if health reaches 0 or the player goes out of bounds
+- Plays a sound and flashes the screen when the player takes damage
+- Has a 2-second cooldown for taking damage
+- Allows player to test damage by pressing the spacebar
+- Has a background audio that plays on awake
+- uses a GameObject called getHitScreen to flash the screen
+- uses AudioSource for hurtAudio and backgroundAudio
+- uses a GameObject called target to reference the player object
+- uses a HealthBar script to manage health bar
+- uses a GameManager script to end the game
+- Two float variables called outBoundsOne and outBoundsTwo that determine the out of bounds zone for the player
+
+---
+
 ## DeployObstacles.cs
 
 - Script that controls the spawning and movement of obstacles in a Unity game
