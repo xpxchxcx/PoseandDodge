@@ -9,6 +9,7 @@ public class DeployObstacles : MonoBehaviour
     private Vector3 startPosition = new Vector3(-1.3f, 0.316f, -29f);
     private int randomNum;
 
+    public bool isReady = false;
     public List<GameObject> Obstacles = new List<GameObject>();
     public float speed = 10.0f;
     private GameObject obstaclePrefab;
@@ -33,11 +34,16 @@ public class DeployObstacles : MonoBehaviour
         
     }
 
-    void Start()
+    private void Update()
     {
-        StartCoroutine(obstacleWave());
-        
+        if(isReady)
+        {
+            StartCoroutine(obstacleWave());
+            isReady = false;
+        }
     }
 
-  
+
+
+
 }

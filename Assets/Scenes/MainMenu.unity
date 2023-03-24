@@ -730,20 +730,45 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 528983834753156492, guid: 97a719e65d961924c9695c870d4347d0,
+    - target: {fileID: 528983835168411770, guid: 97a719e65d961924c9695c870d4347d0,
         type: 3}
-      propertyPath: m_Name
-      value: Dodge
+      propertyPath: m_AnchoredPosition.y
+      value: -123.9
       objectReference: {fileID: 0}
     - target: {fileID: 528983835501186937, guid: 97a719e65d961924c9695c870d4347d0,
         type: 3}
       propertyPath: m_Name
       value: Play
       objectReference: {fileID: 0}
+    - target: {fileID: 528983835768678152, guid: 97a719e65d961924c9695c870d4347d0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 99.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 528983834753156483, guid: 97a719e65d961924c9695c870d4347d0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 528983834635692507, guid: 97a719e65d961924c9695c870d4347d0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 528983834753156492, guid: 97a719e65d961924c9695c870d4347d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Dodge
+      objectReference: {fileID: 0}
     - target: {fileID: 528983835768678153, guid: 97a719e65d961924c9695c870d4347d0,
         type: 3}
       propertyPath: m_Name
       value: Pose
+      objectReference: {fileID: 0}
+    - target: {fileID: 528983835704727840, guid: 97a719e65d961924c9695c870d4347d0,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 528983834500532773, guid: 97a719e65d961924c9695c870d4347d0, type: 3}
