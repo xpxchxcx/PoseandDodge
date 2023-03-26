@@ -1,4 +1,4 @@
-<img src="https://github.com/xpxchxcx/RGBD2Avatar/blob/main/PoseandDodge/pad.JPG>
+<img src="https://github.com/xpxchxcx/RGBD2Avatar/blob/main/PoseandDodge/pad.JPG">
 
 
 <h4 align="center">
@@ -15,19 +15,6 @@ The game uses a combination of real-time pose estimation and game physics to pro
 <p align="center">
  <img src=https://github.com/xpxchxcx/RGBD2Avatar/blob/main/PoseandDodge/padmove.gif alt="Sample Video 1"/>
 </p>
-
-### Supports Multi-Person Analyses
-SpeakEase supports group presentations by tracking multiple users simultaneously.
-
-<p align="center">
- <img src=https://user-images.githubusercontent.com/87000020/216838269-130c9264-aab2-4d03-a589-a9aca221ddfe.gif alt="Sample Video 2"/>
-</p>
-
-### Instant Playback
-SpeakEase returns a playback of the analysed presentations after each session to the user.
-
-Reviews can occur at any time after the session, either complementing feedback from professional mentors, 
-or allowing users to record their progress and track their improvements over time.
 
 ## Usage
 
